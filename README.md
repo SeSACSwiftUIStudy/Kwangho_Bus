@@ -7,15 +7,17 @@
 <br/><br/>
 
 ### 궁금한 점
-- Question 1. [weak self] vs [unowned self]
-- Q2. 점심시간 끝나가서 다시 화요일까지 작성하 예정
+- Q1. false <-> true 바뀌는 건 잘 되는데 뷰에 그려지는게 많이 느림<br/>
+  -> State는 받아서 새로 그리고, StateObject는 메모리에 연결되어 있는 상태에서 바뀌는 걸로 아는데 왜 안될까요..?
+- Q2. raywender 문서에서 [unowned self]를 쓰던데 네비게이션 스택에 쌓여지니까 이렇게 사용한게 맞는지
 
 <br/><br/>
 
 ### 회고
-- Searchable 쓰고 싶ㅎ.. 
-- Combine으 썼다고 말할 수는 없을 거 같다! 많이 부족함
-- 반응이 느림 왜지?
+- contentView안에 있는 텍스트필드 .onChange를 통한 텍스트를 .publisher로 하니까 character로 나옴<br/>
+  -> 그래서 collect(), reduce() 사용해서 해결
+- 버전만 높으면 Searchable를 사용해서 해결하고 싶기도 함 ( iOS 15.0 ~ 16.0 )
+- Combine을 썼다고 말할 수는 없을 거 같다! Rx처럼 Input & Output을 적용해보려니까 아직 감이 안잡혀서 어려움
 
 <br/><br/>
 
